@@ -70,7 +70,7 @@ export const Header = () => {
 							</Link>
 							<Link href='/'>
 								<li>
-									<a>{language === 'ru' ? 'Главная страница' : 'Main page'}</a>
+									<a>{language === 'ru' ? 'Главная' : 'Main page'}</a>
 								</li>
 							</Link>
 							<li>

@@ -34,7 +34,7 @@ const Home = () => {
 			/>
 			<AboutMe />
 			<Partfolio />
-			<ExampleLayouts />
+			{/* <ExampleLayouts /> */}
 			<ExampleTelegram />
 		</>
 	)
