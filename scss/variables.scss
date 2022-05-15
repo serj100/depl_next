@@ -1,0 +1,31 @@
+// Ширина контейнера
+$container-width: 840px;
+$container-padding: 10px;
+// Размеры экранов устройств
+$mobile-width: 0px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
+// $header-height: 6.5vh;
+$header-height: 100px;
+// Отступ логотипа, если header фиксирован
+$logo-header-top: 13px;
+$logo-header-left: 40px;
+// Отступ логотипа, если header фиксирован
+$burger-header-top: 20px;
+$burger-header-right: 40px;
+
+$Block1-height: 93.5vh;
+$Block2-height: 100vh;
+
+// Цвета:
+// ============================================//
+
+// header-burger
+$color-header-bg: #2c2c2c;
+$color-links-header: #000000;
+$color-text-button-header: #ffffff;
+$color-submenu-burger: #2c2c2c;
+$color-burger: #ffffff;
+
+$body-color: #2c2c2c;

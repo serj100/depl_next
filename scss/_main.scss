@@ -1,0 +1,79 @@
+// testing
+@mixin dotedBorder {
+	border: 1px dotted grey;
+}
+// дефолтный контейнер
+@mixin container {
+	margin: 0px auto;
+	max-width: $container-width;
+	padding-left: $container-padding;
+	padding-right: $container-padding;
+}
+
+// @include animatedShowRightToPosition(1.4s);
+// анимация появления блока слева в его позицию
+@mixin animatedShowLeftToPosition($speed: 1.4s) {
+	opacity: 0;
+	@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+		transform: translate(-5%, 0px);
+	}
+
+	@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+		transform: translate(-5%, 0px);
+	}
+	transform: translate(-10%, 0px);
+	transition: all $speed ease 0s;
+	&._active {
+		opacity: 1;
+		transform: translate(0px, 0px);
+	}
+}
+// анимация появления блока справа в его позицию
+@mixin animatedShowRightToPosition($speed: 1.4s) {
+	opacity: 0;
+	@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+		transform: translate(-5%, 0px);
+	}
+
+	@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+		transform: translate(-5%, 0px);
+	}
+	transform: translate(10%, 0px);
+	transition: all $speed ease 0s;
+	&._active {
+		opacity: 1;
+		transform: translate(0px, 0px);
+	}
+}
+//  Появление из под позиции объекта
+@mixin animatedShowUpToPosition($speed: 1.4s) {
+	transform: translate(0px, 80%);
+	opacity: 0;
+	transition: all $speed ease 0s;
+	&._active {
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
+}
+
+//  Появление сверху позиции объекта
+@mixin animatedShowDownToPosition($speed: 1.4s) {
+	transform: translate(0px, -80%);
+	opacity: 0;
+	transition: all $speed ease 0s;
+	&._active {
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
+}
+
+// нужно для блокировки скролла при нажатии бургер меню
+body {
+	background-color: $body-color;
+	&::-webkit-scrollbar {
+		width: 0;
+	}
+	// &.lock {
+	// 	overflow: hidden;
+	// }
+}
