@@ -14,13 +14,13 @@ const FadeIn = ({children}) => {
             opacity: 0,
             height: '100%',
             widows: '100%',
-            transition: 'all 1.4s ease 0s',
+            transition: 'all 0.4s ease 0s',
         },
         to: {
             opacity: 1,
             height: '100%',
             widows: '100%',
-            transition: 'all 1.4s ease 0s',
+            transition: 'all 0.4s ease 0s',
         },
     })
 
@@ -29,7 +29,7 @@ const FadeIn = ({children}) => {
 
 
 export const Scene3d = props => {
-    const [rotationSpeed, setRotationSpeed] = useState(100)
+    const [rotationSpeed, setRotationSpeed] = useState(300)
 
     useEffect(() => {
         const lowSpeed = () => {
