@@ -12,6 +12,12 @@ export const ContactsComponent = () => {
 			<div className='last_subtitle__wrapper'>
 				<p>Telegram: @Avanturist100</p>
 				<p>Email: avanturist.mailbox@gmail.com</p>
+				<p>
+					Резюме на HeadHunter:{' '}
+					<a href='https://voronezh.hh.ru/resume/f206598cff07a043020039ed1f7444345a6844'>
+						JavaScript разработчик
+					</a>
+				</p>
 			</div>
 		</div>
 	)

@@ -57,7 +57,14 @@
 						li {
 							display: flex;
 							align-items: center;
-
+							.image {
+								margin-left: 10px;
+							}
+							&.active {
+								a {
+									color: #fe6783;
+								}
+							}
 							a {
 								&:hover {
 									cursor: pointer;

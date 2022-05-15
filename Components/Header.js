@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useDispatch, useSelector } from 'react-redux'
 import { switchBurger } from '../store/actions/switchBurger'
 import { switchLanguage } from '../store/actions/switchLanguage'
@@ -8,6 +9,7 @@ export const Header = () => {
 	const dispatch = useDispatch()
 	const burgerStatus = useSelector(state => state.burgerStatus.status)
 	const language = useSelector(state => state.language.status)
+	const router = useRouter()
 
 	const burgerHandler = () => {
 		if (!burgerStatus) {
@@ -52,27 +54,30 @@ export const Header = () => {
 
 					<nav className={`header__menu ${burgerStatus && 'active'}`}>
 						<ul className='header__list'>
-							<Link href='https://github.com/serj100'>
-								<li>
-									<Image
-										width={20}
-										height={20}
-										src='/img/header/GitHub.svg'
-										alt=''
-									/>
-									<a target='_self'>GitHub</a>
-								</li>
-							</Link>
-							<Link href='/contacts'>
-								<li>
-									<a>{language === 'ru' ? 'Контакты' : 'Contacts'}</a>
-								</li>
-							</Link>
 							<Link href='/'>
-								<li>
+								<li className={router.asPath == '/' ? 'active' : ''}>
 									<a>{language === 'ru' ? 'Главная' : 'Main page'}</a>
 								</li>
 							</Link>
+							<Link href='/contacts'>
+								<li className={router.asPath == '/contacts' ? 'active' : ''}>
+									<a>{language === 'ru' ? 'Контакты' : 'Contacts'}</a>
+								</li>
+							</Link>
+							<Link href='https://github.com/serj100'>
+								<li>
+									<div className='image'>
+										<Image
+											width={20}
+											height={20}
+											src='/img/header/GitHub.svg'
+											alt=''
+										/>
+									</div>
+									<a target='_self'>GitHub</a>
+								</li>
+							</Link>
+
 							<li>
 								<a
 									onClick={() => {

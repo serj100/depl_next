@@ -6,6 +6,7 @@ import { animated, useSpring } from '@react-spring/web'
 import User3d from './User3d.js'
 import Phone3d from './Phone3d.js'
 import Model404 from './Model404.js'
+import Window from './Window3d.js'
 
 const FadeIn = ({ children }) => {
 	const styles = useSpring({
@@ -27,13 +28,13 @@ const FadeIn = ({ children }) => {
 }
 
 export const Scene3d = props => {
-	const [rotationSpeed, setRotationSpeed] = useState(100)
+	const [rotationSpeed, setRotationSpeed] = useState(500)
 
 	useEffect(() => {
 		const lowSpeed = () => {
 			setRotationSpeed(3)
 		}
-		setTimeout(lowSpeed, 1000)
+		setTimeout(lowSpeed, 1500)
 	}, [])
 
 	let model = <Phone3d />
@@ -69,7 +70,7 @@ export const Scene3d = props => {
 	return (
 		<div className='scene3d__wrapper'>
 			<FadeIn>
-				<Canvas camera={{ position: [-7, 3, 3], zoom: 2, castShadow: true }}>
+				<Canvas camera={{ position: [-6, 4, 4], zoom: 2, castShadow: true }}>
 					<mesh>
 						<OrbitControls
 							autoRotate={true}
