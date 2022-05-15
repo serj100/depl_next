@@ -73,9 +73,9 @@ body {
 	&::-webkit-scrollbar {
 		width: 0;
 	}
-	// &.lock {
-	// 	overflow: hidden;
-	// }
+	&.lock {
+		overflow: hidden;
+	}
 }
 
 a {
