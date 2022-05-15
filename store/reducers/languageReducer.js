@@ -1,6 +1,6 @@
 import { SWITCH_LANGUAGE } from '../types.js'
 const defaultState = {
-	status: 'en',
+	status: 'ru',
 }
 
 export const languageReducer = (state = defaultState, action) => {
