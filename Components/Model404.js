@@ -8,6 +8,7 @@ export default function Model({ ...props }) {
 		<group ref={group} {...props} dispose={null}>
 			<mesh
 				castShadow
+				receiveShadow
 				geometry={nodes['404'].geometry}
 				material={materials.palette}
 				rotation={[Math.PI / 2, 0, 0]}

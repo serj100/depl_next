@@ -1,5 +1,11 @@
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
+import {
+	OrbitControls,
+	Environment,
+	MeshReflectorMaterial,
+	Reflector,
+} from '@react-three/drei'
 
 export default function Model({ ...props }) {
 	const group = useRef()
@@ -8,6 +14,7 @@ export default function Model({ ...props }) {
 		<group ref={group} {...props} dispose={null}>
 			<mesh
 				castShadow
+				receiveShadow
 				geometry={nodes.I.geometry}
 				material={materials.palette}
 				position={[0.32, -1, -1.12]}

@@ -8,6 +8,7 @@ export default function Model({ ...props }) {
 		<group ref={group} {...props} dispose={null}>
 			<mesh
 				castShadow
+				receiveShadow
 				geometry={nodes.phone.geometry}
 				material={materials.palette}
 				position={[0, -1, 0]}
