@@ -64,19 +64,20 @@ export const Header = () => {
 									<a>{language === 'ru' ? 'Контакты' : 'Contacts'}</a>
 								</li>
 							</Link>
-							<Link href='https://github.com/serj100'>
-								<li>
-									<div className='image'>
-										<Image
-											width={20}
-											height={20}
-											src='/img/header/GitHub.svg'
-											alt=''
-										/>
-									</div>
-									<a target='_self'>GitHub</a>
-								</li>
-							</Link>
+
+							<li>
+								<div className='image'>
+									<Image
+										width={20}
+										height={20}
+										src='/img/header/GitHub.svg'
+										alt=''
+									/>
+								</div>
+								<a href='https://github.com/serj100' target='_blank'>
+									GitHub
+								</a>
+							</li>
 
 							<li>
 								<a
