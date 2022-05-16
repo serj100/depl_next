@@ -11,7 +11,7 @@ export const Scene3d = props => {
 	const [rotationSpeed, setRotationSpeed] = useState(1)
 	const boxRef = useRef()
 
-	const fastRotate = (speed = 100) => {
+	const fastRotate = (speed = 500) => {
 		;(async () => {
 			await setRotationSpeed(speed)
 			await setTimeout(() => {
