@@ -5,6 +5,7 @@
 // дефолтный контейнер
 @mixin container {
 	margin: 0px auto;
+
 	max-width: $container-width;
 	padding-left: $container-padding;
 	padding-right: $container-padding;
