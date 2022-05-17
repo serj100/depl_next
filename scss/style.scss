@@ -36,13 +36,15 @@
 		padding-top: $header-height;
 		margin: 0px auto;
 		width: 610px;
-
+		padding-left: 10px;
+		padding-right: 10px;
 		.scene3d__wrapper {
 			height: 370px;
 			width: 100%;
 		}
 		.hello__wrapper {
 			// @include animatedShowLeftToPosition;
+
 			display: flex;
 			align-items: center;
 			justify-content: center;
