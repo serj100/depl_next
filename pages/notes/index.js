@@ -9,12 +9,6 @@ import { useEffect, useState } from 'react'
 const Notes = props => {
 	const language = useSelector(state => state.language.status)
 
-	const [notes, setNotes] = useState([])
-
-	useEffect(() => {
-		setNotes(props.data)
-	}, [])
-
 	return (
 		<>
 			<Scene3d variant='notes' />
