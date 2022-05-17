@@ -17,7 +17,10 @@ export const ExampleLayouts = () => {
 				<div className='examples__wrapper _anim-items _start'>
 					<div className='example'>
 						<div className='img'>
-							<a target='_blank' href='http://f0673816.xsph.ru/project1/'>
+							<a // target='_blank'
+								rel='noopener'
+								href='http://f0673816.xsph.ru/project1/'
+							>
 								<Image
 									width={260}
 									height={130}

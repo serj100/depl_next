@@ -15,7 +15,8 @@ export const ContactsComponent = () => {
 				<p>
 					Резюме на HeadHunter:{' '}
 					<a
-						target='_blank'
+						// target='_blank'
+						rel='noopener'
 						href='https://voronezh.hh.ru/resume/f206598cff07a043020039ed1f7444345a6844'
 					>
 						JavaScript разработчик

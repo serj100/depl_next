@@ -38,7 +38,8 @@ export const ExampleTelegram = () => {
 					</div>
 					<div className='title'>
 						<a
-							target='_blank'
+							// target='_blank'
+							rel='noopener'
 							href='https://github.com/serj100/Telegram-Switch-Bot'
 						>
 							<p>https://github.com/serj100/Telegram-Switch-Bot</p>

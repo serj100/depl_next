@@ -99,7 +99,10 @@ export const Header = () => {
 										alt=''
 									/>
 								</div>
-								<a href='https://github.com/serj100' target='_blank'>
+								<a
+									href='https://github.com/serj100' // target='_blank'
+									rel='noopener'
+								>
 									GitHub
 								</a>
 							</li>
