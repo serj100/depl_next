@@ -27,7 +27,7 @@ const Notes = props => {
 }
 
 export async function getServerSideProps() {
-	const res = await axios.get('http://localhost:3000/api/note/getAll')
+	const res = await axios.get('http://ilovedev.ru:3000/api/note/getAll')
 
 	const data = res.data
 
