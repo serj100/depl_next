@@ -15,12 +15,12 @@ const Notes = props => {
 			<Hello
 				text={
 					language == 'en'
-						? `${!notes ? 'No notes yet :(' : 'Notes.'}`
-						: `${!notes ? 'Пока заметок нет :(' : 'Заметки.'}`
+						? `${!props.data.data ? 'No notes yet :(' : 'Notes.'}`
+						: `${!props.data.data ? 'Пока заметок нет :(' : 'Заметки.'}`
 				}
 			/>
 			{props.data.data.map(note => (
-				<h1>{note.title}</h1>
+				<h1 key={toString(note.id)}>{note.title}</h1>
 			))}
 		</>
 	)
