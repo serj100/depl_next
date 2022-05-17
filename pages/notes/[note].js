@@ -24,7 +24,7 @@ const Note = props => {
 
 export async function getServerSideProps(ctx) {
 	const res = await axios.get(
-		`http://ilovedev.ru:3000/api/note/getOne?id=${ctx.params.note}`
+		`https://depl-next.vercel.app:3000/api/note/getOne?id=${ctx.params.note}`
 	)
 
 	const data = res.data.data[0]
