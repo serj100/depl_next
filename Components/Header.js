@@ -79,6 +79,17 @@ export const Header = () => {
 								</li>
 							</Link>
 
+							<Link href='/notes'>
+								<li
+									onClick={() => {
+										burgerHandler(true)
+									}}
+									className={router.asPath == '/notes' ? 'active' : ''}
+								>
+									<a>{language === 'ru' ? 'Заметки' : 'Notes'}</a>
+								</li>
+							</Link>
+
 							<li>
 								<div className='image'>
 									<Image

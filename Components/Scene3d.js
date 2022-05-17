@@ -6,6 +6,7 @@ import { OrbitControls, Environment } from '@react-three/drei'
 import User3d from './User3d.js'
 import Phone3d from './Phone3d.js'
 import Model404 from './Model404.js'
+import Notes3d from './Notes3d.js'
 
 export const Scene3d = props => {
 	const [rotationSpeed, setRotationSpeed] = useState(1)
@@ -41,6 +42,10 @@ export const Scene3d = props => {
 		}
 		case '404': {
 			model = <Model404 />
+			break
+		}
+		case 'notes': {
+			model = <Notes3d />
 			break
 		}
 		default:

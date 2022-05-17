@@ -3,19 +3,19 @@ import { useGLTF } from '@react-three/drei'
 
 export default function Model({ ...props }) {
 	const group = useRef()
-	const { nodes, materials } = useGLTF('../model/user.glb')
+	const { nodes, materials } = useGLTF('../model/notes.glb')
 	return (
 		<group ref={group} {...props} dispose={null}>
 			<mesh
 				castShadow
 				receiveShadow
-				geometry={nodes.I.geometry}
+				position={[0, -1.7, 0]}
+				geometry={nodes.notes.geometry}
 				material={materials.palette}
-				position={[0.32, -1, -1.12]}
 				rotation={[Math.PI / 2, 0, 0]}
 			/>
 		</group>
 	)
 }
 
-useGLTF.preload('../model/user.glb')
+useGLTF.preload('../model/notes.glb')
