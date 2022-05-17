@@ -11,10 +11,14 @@ export const Header = () => {
 	const language = useSelector(state => state.language.status)
 	const router = useRouter()
 
-	const burgerHandler = () => {
-		if (!burgerStatus) {
+	const burgerHandler = (down = false) => {
+		if (!burgerStatus && !down) {
 			dispatch(switchBurger(true))
 		} else {
+			dispatch(switchBurger(false))
+		}
+
+		if (down) {
 			dispatch(switchBurger(false))
 		}
 	}
@@ -55,12 +59,22 @@ export const Header = () => {
 					<nav className={`header__menu ${burgerStatus && 'active'}`}>
 						<ul className='header__list'>
 							<Link href='/'>
-								<li className={router.asPath == '/' ? 'active' : ''}>
+								<li
+									onClick={() => {
+										burgerHandler(true)
+									}}
+									className={router.asPath == '/' ? 'active' : ''}
+								>
 									<a>{language === 'ru' ? 'Главная' : 'Main page'}</a>
 								</li>
 							</Link>
 							<Link href='/contacts'>
-								<li className={router.asPath == '/contacts' ? 'active' : ''}>
+								<li
+									onClick={() => {
+										burgerHandler(true)
+									}}
+									className={router.asPath == '/contacts' ? 'active' : ''}
+								>
 									<a>{language === 'ru' ? 'Контакты' : 'Contacts'}</a>
 								</li>
 							</Link>
@@ -82,6 +96,7 @@ export const Header = () => {
 							<li>
 								<a
 									onClick={() => {
+										burgerHandler(true)
 										languageHandler()
 									}}
 								>
