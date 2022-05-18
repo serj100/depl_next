@@ -7,7 +7,7 @@ export const Partfolio = () => {
 	return (
 		<>
 			<div className='subtitle__wrapper'>
-				<p>{language === 'en' ? 'Some portfolio:' : 'Немного партфолио:'}</p>
+				<p>{language === 'en' ? 'Some portfolio:' : 'Немного портфолио:'}</p>
 			</div>
 			<div className='partfolio__wrapper'>
 				<a
