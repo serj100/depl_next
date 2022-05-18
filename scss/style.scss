@@ -230,7 +230,7 @@
 				flex-wrap: wrap;
 				align-items: center;
 				justify-content: space-between;
-
+				overflow: hidden;
 				.example {
 					&:nth-child(4n + 3) {
 						margin-top: 15px;
@@ -253,8 +253,11 @@
 					align-items: center;
 					justify-content: center;
 					.img {
+						overflow: hidden;
 						border-radius: 16px;
 						display: block;
+						width: 298px;
+						height: 160px;
 					}
 				}
 			}
