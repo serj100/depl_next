@@ -8,8 +8,8 @@ export default async function getOne(req, res) {
 			await connectMongo()
 
 			console.log('WE RECEIVE NOTE...')
-			const note = await Note.find({ id: req.query.id })
-
+			const note = await Note.findById(req.query._id)
+			// console.log(req.query._id)
 			res.status(200).json({ message: 'SUCCESS', data: note })
 			console.log(`SUCCESS.`)
 		} catch {

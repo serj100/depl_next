@@ -11,8 +11,8 @@ export const Partfolio = () => {
 			</div>
 			<div className='partfolio__wrapper'>
 				<a
-					// target='_blank'
-					rel='noopener'
+					target='_blank'
+					rel='noopener noreferrer'
 					href='https://play.google.com/store/apps/details?id=com.phonebookwithoutexpo&hl=ru&gl=US'
 				>
 					<div className='app__wrapper _anim-items _start'>
@@ -57,8 +57,8 @@ export const Partfolio = () => {
 					</div>
 				</a>
 				<a
-					// target='_blank'
-					rel='noopener'
+					target='_blank'
+					rel='noopener noreferrer'
 					href='https://play.google.com/store/apps/details?id=com.AvanturDev.Chmishenko_V_A&hl=ru&gl=US'
 				>
 					<div className='app__wrapper'>

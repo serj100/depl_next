@@ -20,7 +20,7 @@ const Home = () => {
 		} else {
 			dispatch(switchLanguage('en'))
 		}
-	}, [])
+	})
 
 	return (
 		<>

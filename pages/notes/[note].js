@@ -1,6 +1,4 @@
 import axios from 'axios'
-import { useRouter } from 'next/router'
-
 import { Scene3d } from '../../Components/Scene3d.js'
 import { Hello } from '../../Components/Hello'
 import { Note as Notec } from '../../Components/Note.js'
@@ -13,7 +11,7 @@ const Note = props => {
 	return (
 		<>
 			<Scene3d variant='notes' />
-			{/* <Hello text={language == 'en' ? data[0].title : data[0].title} /> */}
+
 			<Hello
 				text={language == 'en' ? `${props.data.title}` : `${props.data.title}`}
 			/>
@@ -24,10 +22,11 @@ const Note = props => {
 
 export async function getServerSideProps(ctx) {
 	const res = await axios.get(
-		`https://depl-next.vercel.app/api/note/getOne?id=${ctx.params.note}`
+		`https://depl-next.vercel.app/api/note/getOne?_id=${ctx.params.note}`
+		// `http://localhost:3000/api/note/getOne?_id=${ctx.params.note}`
 	)
 
-	const data = res.data.data[0]
+	const data = res.data.data
 
 	return { props: { data } }
 }

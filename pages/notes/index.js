@@ -1,10 +1,7 @@
 import axios from 'axios'
-
 import { Scene3d } from '../../Components/Scene3d.js'
 import { Hello } from '../../Components/Hello'
-
 import { useSelector } from 'react-redux'
-import { useEffect, useState } from 'react'
 import ToNote from '../../Components/ToNote.js'
 
 const Notes = props => {
@@ -27,7 +24,7 @@ const Notes = props => {
 			{props.data.data.map(note => (
 				<ToNote
 					key={note._id}
-					id={note.id}
+					id={note._id}
 					title={note.title}
 					body={note.body}
 				/>
@@ -38,7 +35,7 @@ const Notes = props => {
 
 export async function getServerSideProps() {
 	const res = await axios.get('https://depl-next.vercel.app/api/note/getAll')
-
+	// const res = await axios.get('http://localhost:3000/api/note/getAll')
 	const data = res.data
 	return { props: { data } }
 }

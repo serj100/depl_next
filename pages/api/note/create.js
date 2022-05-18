@@ -4,13 +4,13 @@ import Note from '../../../models/Note'
 export default async function create(req, res) {
 	if (req.method === 'POST') {
 		try {
-			const { id, title, body, image } = req.body
+			const { title, body, image } = req.body
 
 			console.log('CONNECTING TO DB...')
 			await connectMongo()
 
 			console.log('CREATING NOTE...')
-			const note = await Note.create({ id, title, body, image })
+			const note = await Note.create({ title, body, image })
 			note.save()
 
 			res.status(201).json({ message: 'NOTE HAS CREATED.' })
