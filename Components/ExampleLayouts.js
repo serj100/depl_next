@@ -14,7 +14,7 @@ export const ExampleLayouts = () => {
 				</p>
 			</div>
 			<div className='layouts__wrapper'>
-				<div className='examples__wrapper _anim-items _start'>
+				<div className='examples__wrapper'>
 					<div className='example'>
 						<div className='img'>
 							<a
@@ -23,7 +23,7 @@ export const ExampleLayouts = () => {
 								href='http://f0673816.xsph.ru/project1/'
 							>
 								<Image
-									width={298}
+									width={290}
 									height={160}
 									src='/img/project1/project1.png'
 									alt=''
