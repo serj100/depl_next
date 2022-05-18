@@ -13,6 +13,7 @@ const Note = props => {
 			<Scene3d variant='notes' />
 
 			<Hello
+				back={true}
 				text={language == 'en' ? `${props.data.title}` : `${props.data.title}`}
 			/>
 			<Notec body={props.data.body} />

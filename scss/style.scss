@@ -47,7 +47,10 @@
 
 			display: flex;
 			align-items: center;
-			justify-content: center;
+			justify-content: space-between;
+			&.center {
+				justify-content: center;
+			}
 			height: 60px;
 			width: 100%;
 			background: linear-gradient(90.4deg, #fe6783 0.09%, #ffbf84 99.9%);
@@ -55,10 +58,62 @@
 			border-radius: 15px;
 			margin-top: 15px;
 			margin-bottom: 15px;
-			p {
-				font-family: Podkova-Regular;
-				font-size: 24px;
-				color: #2c2c2c;
+			.text__wrapper {
+				&.center {
+					padding-left: 0;
+				}
+				padding-left: 25px;
+				p {
+					// margin-left: 25px;
+					font-family: Podkova-Regular;
+					font-size: 24px;
+					color: #2c2c2c;
+				}
+			}
+			.exitButton__wrapper {
+				cursor: pointer;
+				&.center {
+					display: none;
+				}
+				display: block;
+				position: relative;
+				z-index: 3;
+				width: 60px;
+				height: 40px;
+				right: 20px;
+
+				&::before,
+				&::after {
+					content: '';
+					background-color: $color-burger;
+					position: absolute;
+					width: 100%;
+					height: 6px;
+					// border-radius: 50%;
+					left: 0;
+					transform: rotate(45deg);
+					top: 17px;
+				}
+				&::before {
+					transform: rotate(45deg);
+					top: 17px;
+				}
+				&::after {
+					transform: rotate(-45deg);
+					top: 17px;
+				}
+
+				span {
+					content: '';
+					background-color: $color-burger;
+					position: absolute;
+					width: 100%;
+					height: 6px;
+					// border-radius: 50%;
+					left: 0;
+					top: 17px;
+					transform: scale(0);
+				}
 			}
 		}
 		.about_me__wrapper {
