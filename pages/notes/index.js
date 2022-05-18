@@ -5,6 +5,7 @@ import { Hello } from '../../Components/Hello'
 
 import { useSelector } from 'react-redux'
 import { useEffect, useState } from 'react'
+import ToNote from '../../Components/ToNote.js'
 
 const Notes = props => {
 	const language = useSelector(state => state.language.status)
@@ -15,12 +16,21 @@ const Notes = props => {
 			<Hello
 				text={
 					language == 'en'
-						? `${!props.data.data ? 'No notes yet :(' : 'Notes.'}`
-						: `${!props.data.data ? 'Пока заметок нет :(' : 'Заметки.'}`
+						? `${props.data.data.length === 0 ? 'No notes yet :(' : 'Notes.'}`
+						: `${
+								props.data.data.length === 0
+									? 'Пока заметок нет :('
+									: 'Заметки.'
+						  }`
 				}
 			/>
 			{props.data.data.map(note => (
-				<h1 key={toString(note.id)}>{note.title}</h1>
+				<ToNote
+					key={note._id}
+					id={note.id}
+					title={note.title}
+					body={note.body}
+				/>
 			))}
 		</>
 	)
@@ -30,7 +40,6 @@ export async function getServerSideProps() {
 	const res = await axios.get('https://depl-next.vercel.app/api/note/getAll')
 
 	const data = res.data
-
 	return { props: { data } }
 }
 

@@ -84,7 +84,7 @@ export const Header = () => {
 									onClick={() => {
 										burgerHandler(true)
 									}}
-									className={router.asPath == '/notes' ? 'active' : ''}
+									className={router.asPath.match('notes') ? 'active' : ''}
 								>
 									<a>{language === 'ru' ? 'Заметки' : 'Notes'}</a>
 								</li>
