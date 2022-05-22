@@ -52,9 +52,7 @@ export const ExampleTelegram = () => {
 							? `Telegram bot, which greatly simplified my work in Yandex. I'll leave this here to demonstrate how to write Telegram
 bots. The bot replaces the text in the link like [Link
 description](link) to ((Link to description link)) and vice versa.`
-							: `Телеграм-бот, который значительно упростил мне работу в Яндексе. Оставлю это здесь для демонстрации написания Telegram
-ботов. Бот заменяет в ссылке текст вида [Ссылка
-описание](ссылка) на ((Ссылка на описание ссылка)) и наоборот.`}
+							: `Телеграм-бот, который значительно упростил мне работу в Яндексе. Оставлю это здесь для демонстрации написания Telegram ботов. Бот заменяет в ссылки в тексте с [ссылка описание](ссылка) на ((Ссылка на описание ссылка)) и наоборот.`}
 					</p>
 				</div>
 			</div>
