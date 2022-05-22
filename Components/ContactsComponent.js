@@ -4,7 +4,7 @@ export const ContactsComponent = () => {
 	const language = useSelector(state => state.language.status)
 
 	return (
-		<div className='about_me__wrapper'>
+		<div className='contacts__wrapper'>
 			<h3>{language == 'en' ? `Sergey Kozlov` : `Сергей Козлов`}</h3>
 			<div className='secont_subtitle__wrapper'>
 				<p>{language == 'en' ? `Contacts:` : `Контакты:`}</p>

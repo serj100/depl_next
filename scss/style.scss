@@ -166,6 +166,46 @@
 				}
 			}
 		}
+		.contacts__wrapper {
+			background: rgba(255, 255, 255, 0.03);
+			border-radius: 16px;
+			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+			backdrop-filter: blur(5px);
+			-webkit-backdrop-filter: blur(5px);
+			border: 1px solid rgba(255, 255, 255, 0.3);
+			padding: 10px;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+
+			h3 {
+				font-size: 32px;
+				font-family: Podkova-Bold;
+				color: #ffffff;
+			}
+			.first_subtitle__wrapper {
+				p {
+					font-size: 20px;
+					font-family: Podkova-Regular;
+					color: #ffffffaa;
+				}
+			}
+			.secont_subtitle__wrapper {
+				p {
+					font-size: 20px;
+					font-family: Podkova-Regular;
+					color: #ffffffaa;
+				}
+			}
+			.last_subtitle__wrapper {
+				p {
+					font-size: 20px;
+					font-family: Podkova-Regular;
+					color: #ffffffaa;
+				}
+			}
+		}
 		.partfolio__wrapper {
 			display: flex;
 			flex-direction: column;
