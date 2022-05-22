@@ -1,8 +1,6 @@
 import { Suspense, useEffect, useState, useRef } from 'react'
 import { Canvas } from '@react-three/fiber'
-
 import { OrbitControls, Environment } from '@react-three/drei'
-
 import User3d from './User3d.js'
 import Phone3d from './Phone3d.js'
 import Model404 from './Model404.js'
@@ -58,7 +56,7 @@ export const Scene3d = props => {
 	}
 
 	return (
-		<div className='scene3d__wrapper'>
+		<div className='scene3d'>
 			<Canvas
 				dpr={[1, 1.5]}
 				shadows

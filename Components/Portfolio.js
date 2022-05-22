@@ -1,22 +1,22 @@
 import Image from 'next/image'
 import { useSelector } from 'react-redux'
 
-export const Partfolio = () => {
+export const Portfolio = () => {
 	const language = useSelector(state => state.language.status)
 
 	return (
 		<>
-			<div className='subtitle__wrapper'>
+			<div className='subtitle_out_block'>
 				<p>{language === 'en' ? 'Some portfolio:' : 'Немного портфолио:'}</p>
 			</div>
-			<div className='partfolio__wrapper'>
+			<section>
 				<a
 					target='_blank'
 					rel='noopener noreferrer'
 					href='https://play.google.com/store/apps/details?id=com.phonebookwithoutexpo&hl=ru&gl=US'
 				>
-					<div className='app__wrapper _anim-items _start'>
-						<div className='icon__wrapper'>
+					<div className='portfolio__app'>
+						<div className='icon_app'>
 							<div className='image'>
 								<Image
 									width={180}
@@ -26,7 +26,7 @@ export const Partfolio = () => {
 								/>
 							</div>
 						</div>
-						<div className='title__wrapper'>
+						<div className='portfolio__title_wrapper'>
 							<div className='title'>
 								<p>
 									{language === 'en'
@@ -61,8 +61,8 @@ export const Partfolio = () => {
 					rel='noopener noreferrer'
 					href='https://play.google.com/store/apps/details?id=com.AvanturDev.Chmishenko_V_A&hl=ru&gl=US'
 				>
-					<div className='app__wrapper'>
-						<div className='icon__wrapper'>
+					<div className='portfolio__app'>
+						<div className='icon_app'>
 							<div className='image'>
 								<Image
 									width={180}
@@ -72,7 +72,7 @@ export const Partfolio = () => {
 								/>
 							</div>
 						</div>
-						<div className='title__wrapper'>
+						<div className='portfolio__title_wrapper'>
 							<div className='title'>
 								<p>
 									{language === 'en'
@@ -100,7 +100,7 @@ export const Partfolio = () => {
 						</div>
 					</div>
 				</a>
-			</div>
+			</section>
 		</>
 	)
 }

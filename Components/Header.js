@@ -100,7 +100,7 @@ export const Header = () => {
 									/>
 								</div>
 								<a
-									href='https://github.com/serj100' // target='_blank'
+									href='https://github.com/serj100'
 									target='_blank'
 									rel='noopener noreferrer'
 								>

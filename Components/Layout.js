@@ -5,10 +5,8 @@ const Layout = ({ children }) => {
 	return (
 		<div className='container'>
 			<Header />
-			<div className='container__content'>
-				{children}
-				<Footer />
-			</div>
+			{children}
+			<Footer />
 		</div>
 	)
 }

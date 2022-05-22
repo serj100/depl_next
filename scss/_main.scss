@@ -1,14 +1,21 @@
 // testing
 @mixin dotedBorder {
-	border: 1px dotted grey;
+	border: 1px dotted red;
 }
 // дефолтный контейнер
 @mixin container {
 	margin: 0px auto;
-
 	max-width: $container-width;
 	padding-left: $container-padding;
 	padding-right: $container-padding;
+}
+
+@mixin container_content {
+	padding-top: $header-height;
+	margin: 0px auto;
+	width: $container-content-width;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 // @include animatedShowRightToPosition(1.4s);
@@ -77,8 +84,4 @@ body {
 	&.lock {
 		overflow: hidden;
 	}
-}
-
-a {
-	color: #fe6783;
 }

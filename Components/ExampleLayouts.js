@@ -6,17 +6,18 @@ export const ExampleLayouts = () => {
 
 	return (
 		<>
-			<div className='subtitle__wrapper'>
+			<div className='subtitle_out_block'>
 				<p>
 					{language == 'en'
 						? `Examples of the quality of my layout:`
 						: `Примеры верстки макетов:`}
 				</p>
 			</div>
-			<div className='layouts__wrapper'>
-				<div className='examples__wrapper'>
-					<div className='example'>
-						<div className='img'>
+
+			<div className='layouts_ex'>
+				<div className='layouts__exexamples_wrapper'>
+					<div className='layouts__example'>
+						<div className='layouts__ex_img'>
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
@@ -31,8 +32,8 @@ export const ExampleLayouts = () => {
 							</a>
 						</div>
 					</div>
-					<div className='example'>
-						<div className='img'>
+					<div className='layouts__example'>
+						<div className='layouts__ex_img'>
 							<a
 								target='_blank'
 								rel='noopener noreferrer'

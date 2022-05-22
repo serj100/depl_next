@@ -5,7 +5,7 @@ export const ExampleTelegram = () => {
 	const language = useSelector(state => state.language.status)
 	return (
 		<>
-			<div className='subtitle__wrapper'>
+			<div className='subtitle_out_block'>
 				<p>
 					{language == 'en'
 						? `Developments in Telegram:`
