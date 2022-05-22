@@ -7,7 +7,7 @@ export const AboutMe = () => {
 	return (
 		<div className='about_me__wrapper'>
 			<div className='img'>
-				<Image width={960} height={960} src='/img/photo.jpg' alt='' />
+				<Image width={960} height={1280} src='/img/photo.jpg' alt='' />
 			</div>
 			<h3>{language === 'ru' ? 'Сергей Козлов' : 'Sergey Kozlov'}</h3>
 			<div className='secont_subtitle__wrapper'>
