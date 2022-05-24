@@ -21,7 +21,7 @@ export const AboutMe = () => {
 					<p>
 						{language === 'ru'
 							? `Занимаюсь версткой шаблонов сайтов. Пишу на JavaScript. Любимые технологии - NodeJS, React JS, React Native, Gulp❤️, webpack, SCSS.`
-							: `I live and work in Russia. Freelancing in the field web templates sites. Favoritetechnologies - NodeJS, React JS, React Native, Gulp ❤️, webpack, SCSS.`}
+							: `I live and work in Russia. Freelancing in the field web templates sites. Favoritetechnologies - NodeJS, React JS, React Native, Gulp ❤️, webpack, SCSS`}
 					</p>
 				</div>
 			</div>
