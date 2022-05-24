@@ -1,5 +1,6 @@
 // Ширина контейнера
 $container-width: 1000px;
+$container-content-width: 1000px - 390px;
 $container-padding: 0px;
 // Размеры экранов устройств
 $mobile-width: 0px;
@@ -29,3 +30,13 @@ $color-submenu-burger: #2c2c2c;
 $color-burger: #ffffff;
 
 $body-color: #2c2c2c;
+
+@mixin marginsTopBottom($mg: 10px) {
+	margin-top: $mg;
+	margin-bottom: $mg;
+}
+
+@mixin marginsLeftRight($mg: 3px) {
+	margin-left: $mg;
+	margin-right: $mg;
+}

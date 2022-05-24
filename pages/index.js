@@ -1,5 +1,5 @@
 import { Hello } from '../Components/Hello'
-import { Partfolio } from '../Components/Partfolio'
+import { Portfolio } from '../Components/Portfolio'
 import { ExampleLayouts } from '../Components/ExampleLayouts'
 import { AboutMe } from '../Components/AboutMe'
 import { ExampleTelegram } from '../Components/ExampleTelegram'
@@ -33,7 +33,7 @@ const Home = () => {
 				}
 			/>
 			<AboutMe />
-			<Partfolio />
+			<Portfolio />
 			<ExampleLayouts />
 			<ExampleTelegram />
 		</>

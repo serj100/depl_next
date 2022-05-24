@@ -9,10 +9,10 @@ export default function Model({ ...props }) {
 			<mesh
 				geometry={nodes.window.geometry}
 				material={materials.palette}
-				position={[0.32, -2.19, -2.12]}
+				position={[0.32, -1, -2.12]}
 				rotation={[Math.PI / 2, 0, 0]}
-				receiveShadow={false}
-				castShadow={false}
+				castShadow
+				receiveShadow
 			/>
 		</group>
 	)
