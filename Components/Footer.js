@@ -1,5 +1,4 @@
 import { useSelector } from 'react-redux'
-import Link from 'next/link'
 
 export const Footer = () => {
 	const language = useSelector(state => state.language.status)

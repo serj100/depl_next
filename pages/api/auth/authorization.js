@@ -6,7 +6,7 @@ import Cors from 'cors'
 
 const cors = Cors({
 	methods: ['GET'],
-	origin: ['http://192.168.0.103:3000', 'http://localhost:3000'],
+	origin: ['https://depl-next.vercel.app'],
 	allowedHeaders: ['Authorization'],
 })
 

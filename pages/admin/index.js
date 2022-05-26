@@ -45,7 +45,7 @@ const admin = () => {
 			},
 		}
 		await axios
-			.post(`http://localhost:3000/api/auth/login`, data, headers)
+			.post(`https://depl-next.vercel.app/api/auth/login`, data, headers)
 			.then(res => {
 				if (res.status === 200) {
 					logIn(res.data.token, res.data.login)
