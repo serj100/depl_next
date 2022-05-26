@@ -9,11 +9,11 @@ const cors = Cors({
 	methods: ['POST'],
 	origin: [
 		'https://depl-next.vercel.app',
-		'https://www.ilovedev.ru/',
-		'https://ilovedev.ru/',
+		'https://www.ilovedev.ru',
+		'https://ilovedev.ru',
 		'http://depl-next.vercel.app',
-		'http://www.ilovedev.ru/',
-		'http://ilovedev.ru/',
+		'http://www.ilovedev.ru',
+		'http://ilovedev.ru',
 	],
 	// allowedHeaders: ['Authorization'],
 })
