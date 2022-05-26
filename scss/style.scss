@@ -63,6 +63,21 @@
 		}
 		border-radius: 15px;
 	}
+	.login_window {
+		@include marginsTopBottom;
+		background: rgba(255, 255, 255, 0.03);
+		border-radius: 16px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		// padding: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
 	.about_me {
 		@include marginsTopBottom;
 		background: rgba(255, 255, 255, 0.03);
@@ -387,6 +402,53 @@
 			font-size: 24px;
 			color: #2c2c2c;
 		}
+	}
+
+	.input_container__default {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		width: 100%;
+		background: #ffffff;
+
+		box-sizing: border-box;
+		border-radius: 15px;
+		height: 35px;
+		font-family: Podkova-Regular;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 35px;
+		color: #000000;
+		padding-left: 10px;
+	}
+
+	.input_container__wrong {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		width: 100%;
+		background: rgb(255, 122, 122);
+
+		box-sizing: border-box;
+		border-radius: 15px;
+		height: 35px;
+		font-family: Podkova-Regular;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 35px;
+		color: #fff;
+		padding-left: 10px;
+	}
+	.button {
+		width: 100%;
+		background: linear-gradient(90.4deg, #fe6783 0.09%, #ffbf84 99.9%);
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		font-family: Podkova-Bold;
+		border-radius: 15px;
+		height: 35px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-size: 20px;
 	}
 	@include header;
 	@include container;

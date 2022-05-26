@@ -1,2 +1,3 @@
 export const SWITCH_LANGUAGE = 'SWITCH_LANGUAGE'
 export const SWITCH_BURGER = 'SWITCH_BURGER'
+export const SET_USER_INFO = 'SET_USER_INFO'
