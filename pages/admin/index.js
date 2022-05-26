@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import axios from 'axios'
 import { setUser } from '../../store/actions/setUser'
 
-const admin = () => {
+const Admin = () => {
 	const language = useSelector(state => state.language.status)
 	const user = useSelector(state => state.userInfo)
 	const dispatch = useDispatch()
@@ -97,4 +97,4 @@ const admin = () => {
 	)
 }
 
-export default admin
+export default Admin
