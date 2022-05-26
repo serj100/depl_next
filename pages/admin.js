@@ -1,11 +1,11 @@
-import { Scene3d } from '../../Components/Scene3d'
-import { Hello } from '../../Components/Hello'
-import { useInput } from '../../hooks/input.hook'
-import { Input } from '../../Components/Input'
-import { Button } from '../../Components/Button'
+import { Scene3d } from '../Components/Scene3d'
+import { Hello } from '../Components/Hello'
+import { useInput } from '../hooks/input.hook'
+import { Input } from '../Components/Input'
+import { Button } from '../Components/Button'
 import { useDispatch, useSelector } from 'react-redux'
 import axios from 'axios'
-import { setUser } from '../../store/actions/setUser'
+import { setUser } from '../store/actions/setUser'
 
 const Admin = () => {
 	const language = useSelector(state => state.language.status)
