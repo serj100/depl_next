@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
 	}
 	const auth = async () => {
 		await axios
-			.get('http://localhost:3000/api/auth/authorization', {
+			.get('https://depl-next.vercel.app/api/auth/authorization', {
 				headers: {
 					Authorization: `Bearer ${localStorage.getItem('token')}`,
 				},
