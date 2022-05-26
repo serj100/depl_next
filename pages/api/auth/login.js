@@ -7,7 +7,11 @@ import Cors from 'cors'
 
 const cors = Cors({
 	methods: ['POST'],
-	origin: ['https://depl-next.vercel.app'],
+	origin: [
+		'https://depl-next.vercel.app',
+		'https://www.ilovedev.ru/',
+		'https://ilovedev.ru/',
+	],
 	// allowedHeaders: ['Authorization'],
 })
 
