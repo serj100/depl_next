@@ -20,8 +20,18 @@ export const ContactsComponent = () => {
 							rel='noopener noreferrer'
 							href='https://voronezh.hh.ru/resume/f206598cff07a043020039ed1f7444345a6844'
 						>
-							JavaScript разработчик
+							ссылка
 						</a>
+						<p>
+							Профиль на Kwork:{' '}
+							<a
+								target='_blank'
+								rel='noopener noreferrer'
+								href='https://kwork.ru/user/sergey_kozlov'
+							>
+								ссылка
+							</a>
+						</p>
 					</p>
 				</div>
 			</div>
